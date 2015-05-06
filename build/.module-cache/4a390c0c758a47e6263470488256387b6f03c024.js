@@ -1,0 +1,17 @@
+requirejs(["../config"],function (config) {
+	/*配置*/
+	requirejs.config(config);
+	/*依赖*/
+});
+
+React.render(
+	React.createElement("h1", null, "Hello world!"),
+	document.querySelector("#example")	
+);
+
+React.render(
+	React.createElement(CommentBox, null),
+	document.querySelector("#content")
+);
+
+
